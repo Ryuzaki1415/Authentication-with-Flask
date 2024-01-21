@@ -6,6 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+    
+
+        h1 {
+            color: #007bff;
+
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+
+        }
+        body {
+            font-family: Courier;
+            background-color: #000000;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            opacity:1
+
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+          }
+        @keyframes fadeInBody {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        a:hover {
+            text-decoration: underline;
+            background-color: #e5e5e5;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +58,9 @@
         {{ form.password }}
         {{ form.submit }}
     </form>
-    <a href="{{url_for('register')}}">Dont have an account? Sign up!</a>
+    <a href="{{url_for('register')}}">Dont have an account? Sign up!</a> <br>
+    <a href="{{url_for('home')}}">Navigate to Home</a>
+
 
 </body>
 

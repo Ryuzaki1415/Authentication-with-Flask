@@ -6,11 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Courier;
+            background-color: #000000;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 7s;
+
+        }
+
+        h1 {
+            color: #007bff;
+            animation: fadeIn 3s;
+
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+          }
+
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Hello you are logged in.</h1>
     <a href="{{url_for('logout')}}">Press here to logout</a>
 </body>
+
+
 
 </html>
